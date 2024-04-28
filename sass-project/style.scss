@@ -1,0 +1,230 @@
+@import "reset";
+$font-family: sans-serif;
+$base-color: white;
+$primary-color: #47b2e4;
+$second-color: #37517e;
+.bannercolor{
+    background-color: #37517e;
+}
+nav {
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    li{
+        display: inline-block;
+    }
+    a{
+        display: block;
+        padding: 10px 0 10px 30px;
+        justify-content: space-between;
+        text-decoration: none;
+        display: flex;
+        margin-left: 35px;
+        color: white;
+    }
+
+    .nav-link{
+        color: $base-color;
+    }  
+    .active{
+        color: $primary-color;
+    }
+}
+
+@mixin bordered($color) {
+    border:solid $color;
+}
+
+.scrollto{
+    @include bordered($primary-color);
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: $base-color;
+}
+
+#hero h1 {
+    color: $base-color;
+}
+
+#hero h2{
+    color: $base-color;
+}
+
+.glightbox span{
+    padding-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.logo a{
+    text-decoration: none;
+    color: $base-color;
+}
+
+.cliens {
+    background-color: #f3f5fa;
+}
+
+.img-fluid{
+    color: #515151;
+}
+
+.section-title{
+    text-align: center;
+    padding: 30px;
+    color: #37517e;
+}
+.about{
+    ul{
+        list-style: none;
+    }
+    padding-bottom: 50px
+}
+.btn-learn-more{
+    @include bordered($primary-color);
+    color: $primary-color;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+.why-us{
+    background-color: #f3f5fa;
+    padding: 60px 100px 0 100px;
+}
+.content h3{
+    color: #37517e;
+}
+.accordion-list{
+    ul{
+        list-style: none;
+    }
+    li{
+        background-color: white;
+        margin: 25px;
+        padding: 20px;
+    }
+    a{
+        text-decoration: none;
+        // color: black;
+    }
+}
+
+.statick{
+    color: $primary-color;
+}
+
+.skills .content h3{
+    font-family: $font-family;
+    color: $second-color;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.skills .content{
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    li{
+        padding-bottom: 10px;
+    }
+}
+
+.skills .content ul i{
+    font-size: 20px;
+    padding-right: 4px;
+    color:$primary-color;
+}
+
+.skills .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: $font-family;
+    color: $second-color;
+  }
+
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+  }
+
+  .skills .progress-bar-wrap {
+    background: $base-color;
+    height: 10px;
+  }
+
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #4668a2;
+  }
+
+  .services{
+    background-color: #f3f5fa;    
+  }
+  
+  .services .icon-box {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    background: $base-color;
+  }
+
+.services-para{
+    color: #000;
+}
+  
+  .services .icon-box .icon {
+    margin-bottom: 10px;
+  }
+  
+  .services .icon-box .icon i {
+    color: $primary-color;
+    font-size: 36px;
+    transition: 0.3s;
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .services .icon-box h4 a {
+    color: $second-color;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+  }
+  
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .services .icon-box:hover h4 a {
+    color: $primary-color;
+  }
+  
